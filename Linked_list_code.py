@@ -49,4 +49,4 @@ lista.append(30)
 lista.append(50)
 lista.print_list()
 
-print("Números de nós:", count_nodes(lista))
+print("Números de nós:", lista.count_nodes())
