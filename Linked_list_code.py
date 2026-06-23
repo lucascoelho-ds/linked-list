@@ -30,6 +30,17 @@ class LinkedList:
 
         print("None")
 
+    def count_nodes(linked_list):
+        count = 0 
+        current = linked_list.head
+
+        while current:
+            count += 1
+            current = current.next
+
+        return count
+
+# TESTE
 lista = LinkedList()
 
 lista.append(10)
@@ -37,3 +48,5 @@ lista.append(20)
 lista.append(30)
 lista.append(50)
 lista.print_list()
+
+print("Números de nós:", count_nodes(lista))
